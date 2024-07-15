@@ -14,6 +14,14 @@
 - **The Shadow of the Sun** by Ryszard Kapuściński
   - A compelling collection of the author's experiences and observations from his travels across Africa, blending journalism and literature.
 
+### Historical Geopolitics
+- **The Great Game: The Struggle for Empire in Central Asia** by Peter Hopkirk
+  - A gripping account of the 19th-century rivalry between the British and Russian Empires for supremacy in Central Asia.
+
+### Military Strategy and Modern Warfare
+- **The New Rules of War: Victory in the Age of Durable Disorder** by Sean McFate
+  - An analysis of how warfare has evolved in the 21st century, challenging traditional military doctrines and proposing new strategies for modern conflicts.
+
 ---
 
 *This list is a work in progress. Feel free to suggest additions or provide feedback!*
