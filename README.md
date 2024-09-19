@@ -18,6 +18,10 @@
 
 - **The New Rules of War: Victory in the Age of Durable Disorder** by Sean McFate
   - An analysis of how warfare has evolved in the 21st century, challenging traditional military doctrines and proposing new strategies for modern conflicts.
+ 
+### Information Security and Digital Investigation
+- **OSINT Techniques: Open Source Intelligence and Digital Investigation** by Michael Bazzell
+  - A comprehensive guide to Open Source Intelligence (OSINT) methods, providing practical techniques for gathering and analyzing publicly available information for various investigative purposes.
 
 ### Cultural Studies and Travel Writing
 - **Ghetto at the Center of the World: Chungking Mansions, Hong Kong** by Gordon Mathews
