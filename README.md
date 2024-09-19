@@ -32,4 +32,4 @@
 
 ---
 
-*This list is a work in progress. Feel free to suggest additions or provide feedback!*
+*This list is a work in progress. Feel free to [suggest additions or provide feedback](/discussions/1)!*
