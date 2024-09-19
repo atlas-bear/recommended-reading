@@ -20,8 +20,8 @@
   - An analysis of how warfare has evolved in the 21st century, challenging traditional military doctrines and proposing new strategies for modern conflicts.
  
 ### Information Security and Digital Investigation
-- **OSINT Techniques: Open Source Intelligence and Digital Investigation** by Michael Bazzell
-  - A comprehensive guide to Open Source Intelligence (OSINT) methods, providing practical techniques for gathering and analyzing publicly available information for various investigative purposes.
+- **OSINT Techniques: Resources for Uncovering Online Information - 10th Edition (2023)** by Michael Bazzell
+  - A comprehensive guide to Open Source Intelligence (OSINT) methods, providing practical techniques for gathering and analyzing publicly available information. This edition focuses on self-reliance in OSINT investigations, including creating custom search tools, building virtual machines, and mastering the latest search methods for various social media platforms. It covers a wide range of topics from computer optimization to data breaches and ransomware, with an emphasis on methodology, workflow, documentation, and ethics.
 
 ### Cultural Studies and Travel Writing
 - **Ghetto at the Center of the World: Chungking Mansions, Hong Kong** by Gordon Mathews
