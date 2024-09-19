@@ -32,4 +32,4 @@
 
 ---
 
-*This list is a work in progress. Feel free to [suggest additions or provide feedback](discussions/1)!*
+*This list is a work in progress. Feel free to [suggest additions or provide feedback](https://github.com/atlas-bear/recommended-reading/discussions/1)!*
