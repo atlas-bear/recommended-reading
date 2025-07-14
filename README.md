@@ -54,3 +54,17 @@ A curated collection of essential reading materials for intelligence professiona
 ---
 
 _This list is a work in progress. Feel free to [suggest additions or provide feedback](https://github.com/atlas-bear/recommended-reading/discussions/1)!_
+
+---
+
+## Atlas Bear Ecosystem
+
+| Repository                                                                                   | Purpose                             | Status                                                                                        |
+| -------------------------------------------------------------------------------------------- | ----------------------------------- | --------------------------------------------------------------------------------------------- |
+| [osint-tools](https://github.com/atlas-bear/osint-tools)                                     | Maritime & supply chain OSINT tools | ![Status](https://img.shields.io/github/last-commit/atlas-bear/osint-tools)                   |
+| [recommended-reading](https://github.com/atlas-bear/recommended-reading)                     | Curated intelligence reading list   | ![Status](https://img.shields.io/github/last-commit/atlas-bear/recommended-reading)           |
+| [supply-chain-management-tools](https://github.com/atlas-bear/supply-chain-management-tools) | Open source management solutions    | ![Status](https://img.shields.io/github/last-commit/atlas-bear/supply-chain-management-tools) |
+| [osint-ai-guide](https://github.com/atlas-bear/osint-ai-guide)                               | AI applications in OSINT            | ![Status](https://img.shields.io/github/last-commit/atlas-bear/osint-ai-guide)                |
+| [mara](https://github.com/atlas-bear/mara)                                                   | Maritime intelligence platform      | ![Status](https://img.shields.io/github/last-commit/atlas-bear/mara)                          |
+
+**Learn More:** [Atlas Bear Academy](https://www.atlasbear.academy) • **Contact:** [support@atlasbear.co](mailto:support@atlasbear.co)
