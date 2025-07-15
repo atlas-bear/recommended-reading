@@ -22,7 +22,11 @@ A curated collection of essential reading materials for intelligence professiona
   - A groundbreaking experimental study that unveils how easy it is to form anonymous shell corporations. The authors posed as international consultants and approached nearly 4,000 services in over 180 countries to expose the vulnerabilities in global financial systems that enable terrorist financing, corruption, and illegal arms trades.
 
 - **Understanding Terrorist Finance** by Timothy Wittig
+
   - A comprehensive framework for analyzing terrorist finance that dispels popular myths about how terrorist groups access and use financial resources. Wittig demonstrates how terrorists interact with everyday economic systems rather than operating in a separate shadow financial universe, providing crucial insights for intelligence professionals working on counter-terrorism finance.
+
+- **Dark Commerce: How a New Illicit Economy Is Threatening Our Future** by Louise I. Shelley
+  - A comprehensive examination of how modern technology has transformed illicit trade, creating new markets for drugs, human trafficking, wildlife, and cybercrime. Shelley demonstrates how these interconnected criminal networks operate "on steroids," exploiting digital anonymity and globalization to generate trillions in revenue while threatening environmental sustainability and global security.
 
 ### Global Economics and Politics
 
