@@ -4,8 +4,7 @@
 
 **Enhance Your Intelligence Practice:**
 
-- [OSINT Tools](https://github.com/atlas-bear/osint-tools) - Maritime and supply chain intelligence gathering tools
-- [Supply Chain Tools](https://github.com/atlas-bear/supply-chain-management-tools) - Open source management solutions for emerging markets
+- [OSINT Tools](https://github.com/atlas-bear/osint-tools) - Maritime and supply chain OSINT tools and data sources, also as a [website](https://atlas-bear.github.io/osint-tools/)
 - [OSINT AI Guide](https://github.com/atlas-bear/osint-ai-guide) - AI integration in intelligence workflows
 - [Atlas Bear Academy](https://www.atlasbear.academy) - Professional development programs
 
@@ -86,8 +85,7 @@ _This list is a work in progress. Feel free to [suggest additions or provide fee
 | -------------------------------------------------------------------------------------------- | ----------------------------------- | --------------------------------------------------------------------------------------------- |
 | [osint-tools](https://github.com/atlas-bear/osint-tools)                                     | Maritime & supply chain OSINT tools | ![Status](https://img.shields.io/github/last-commit/atlas-bear/osint-tools)                   |
 | [recommended-reading](https://github.com/atlas-bear/recommended-reading)                     | Curated intelligence reading list   | ![Status](https://img.shields.io/github/last-commit/atlas-bear/recommended-reading)           |
-| [supply-chain-management-tools](https://github.com/atlas-bear/supply-chain-management-tools) | Open source management solutions    | ![Status](https://img.shields.io/github/last-commit/atlas-bear/supply-chain-management-tools) |
 | [osint-ai-guide](https://github.com/atlas-bear/osint-ai-guide)                               | AI applications in OSINT            | ![Status](https://img.shields.io/github/last-commit/atlas-bear/osint-ai-guide)                |
-| [mara](https://github.com/atlas-bear/mara)                                                   | Maritime intelligence platform      | ![Status](https://img.shields.io/github/last-commit/atlas-bear/mara)                          |
+| [mara-roadmap](https://github.com/atlas-bear/mara-roadmap) | Roadmap and feedback for [MARA](https://maraiq.com), our maritime security intelligence platform | ![Status](https://img.shields.io/github/last-commit/atlas-bear/mara-roadmap) |
 
 **Learn More:** [Atlas Bear Academy](https://www.atlasbear.academy) • **Contact:** [support@atlasbear.co](mailto:support@atlasbear.co)
