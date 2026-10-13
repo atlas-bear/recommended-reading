@@ -2,8 +2,10 @@
 // the way Material for MkDocs does. Reads the public GitHub API once a day per
 // browser and keeps the result in localStorage; falls back to the name alone.
 (function () {
-  var owner = "atlas-bear";
-  var repo = "recommended-reading";
+  var me = document.currentScript || document.querySelector('script[src$="repo-stats.js"]');
+  var full = (me && me.getAttribute("data-repo")) || "atlas-bear/atlas-bear.github.io";
+  var owner = full.split("/")[0];
+  var repo = full.split("/")[1];
   var key = "atlas-repo-stats:" + owner + "/" + repo;
   var ttl = 24 * 60 * 60 * 1000;
 
