@@ -1,6 +1,6 @@
 ---
 title: "About, licence and contact"
-description: "Licence, disclaimer, contact and the rest of the Atlas Bear ecosystem."
+description: "Licence, disclaimer, contact and the rest of our repositories."
 ---
 
 ## Licence
@@ -15,13 +15,13 @@ A title on this list is one we have read and found useful for illicit trade work
 
 - Proposals, corrections and dead links: the [issue form](https://github.com/atlas-bear/recommended-reading/issues/new/choose).
 - Questions and discussion: [GitHub Discussions](https://github.com/atlas-bear/recommended-reading/discussions).
-- Anything else: [support@atlasbear.co](mailto:support@atlasbear.co).
+- Anything else: [support@ab-labs.io](mailto:support@ab-labs.io).
 
 ## Acknowledgments
 
 Thanks to the authors who did the work these pages point to, to the Open Library and Crossref teams whose open registries make the identifiers checkable, and to the participants of the Summer School on Illicit Trade, whose questions decide what goes on this list.
 
-## Atlas Bear ecosystem
+## Our repositories
 
 | Repository | Purpose | Status |
 | --- | --- | --- |
@@ -32,4 +32,6 @@ Thanks to the authors who did the work these pages point to, to the Open Library
 | [cue-kit](https://github.com/atlas-bear/cue-kit) | Turn video into frames and transcripts for analysis | ![Last commit](https://img.shields.io/github/last-commit/atlas-bear/cue-kit) |
 | [mara-roadmap](https://github.com/atlas-bear/mara-roadmap) | Public roadmap and feedback for [MARA](https://maraiq.com), our maritime security intelligence platform | ![Last commit](https://img.shields.io/github/last-commit/atlas-bear/mara-roadmap) |
 
-Everything above is gathered at the [Atlas Bear Library](https://atlas-bear.github.io/). **Learn more:** [Atlas Bear Academy](https://www.atlasbear.academy), [atlasbear.co](https://atlasbear.co) and [Waterline](https://maraiq.substack.com/), our newsletter. **Contact:** [support@atlasbear.co](mailto:support@atlasbear.co).
+Everything above is gathered at the [Library](https://atlas-bear.github.io/). AB//LABS began as Atlas Bear Labs, the technical side of [Atlas Bear](https://atlasbear.co), and is now a company of its own. The two still work together, and our repositories keep the `atlas-bear` name on GitHub for now.
+
+**Learn more:** [ab-labs.io](https://ab-labs.io), [Atlas Bear](https://atlasbear.co) and its [Academy](https://www.atlasbear.academy), and [Waterline](https://maraiq.substack.com/), our newsletter. **Contact:** [support@ab-labs.io](mailto:support@ab-labs.io).

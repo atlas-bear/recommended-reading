@@ -1,4 +1,4 @@
-# Atlas Bear Recommended Reading
+# Recommended Reading
 
 ![Titles](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fatlas-bear%2Frecommended-reading%2Fmain%2Fexports%2Freading-list.json&query=%24.length&label=titles&color=blue)
 ![Check list](https://github.com/atlas-bear/recommended-reading/actions/workflows/check.yml/badge.svg)
@@ -6,13 +6,13 @@
 ![Verify identifiers](https://github.com/atlas-bear/recommended-reading/actions/workflows/verify.yml/badge.svg)
 ![License](https://img.shields.io/github/license/atlas-bear/recommended-reading)
 
-> Part of the [Atlas Bear Library](https://atlas-bear.github.io/). Read this list as a website at [atlas-bear.github.io/recommended-reading](https://atlas-bear.github.io/recommended-reading/), or take it into your reference manager: [BibTeX](exports/reading-list.bib), [CSL JSON](exports/reading-list.json) (imports straight into Zotero) or [CSV](exports/reading-list.csv).
+> Part of the [Library](https://atlas-bear.github.io/), by AB//LABS. Read this list as a website at [atlas-bear.github.io/recommended-reading](https://atlas-bear.github.io/recommended-reading/), or take it into your reference manager: [BibTeX](exports/reading-list.bib), [CSL JSON](exports/reading-list.json) (imports straight into Zotero) or [CSV](exports/reading-list.csv).
 
 **Related resources:**
 
 - [Maritime and Supply Chain OSINT Tools](https://github.com/atlas-bear/osint-tools): the tools and data sources we use, also as a [website](https://atlas-bear.github.io/osint-tools/).
 - [AI-Enhanced OSINT](https://github.com/atlas-bear/osint-ai-guide): our guide to using AI in intelligence work, also as a [website](https://atlas-bear.github.io/osint-ai-guide/).
-- [Atlas Bear Academy](https://www.atlasbear.academy): our professional development programmes.
+- [Atlas Bear Academy](https://www.atlasbear.academy): professional development programmes from Atlas Bear, the company we spun off from.
 
 ---
 
@@ -179,7 +179,7 @@ Know a book, report or paper that belongs here? Please tell us. The easiest rout
 A title goes on the list when:
 
 1. It helps someone work on illicit trade, or on the economics, politics, places and methods around it. The "Wider reading" section exists for the second kind.
-2. Someone at Atlas Bear has read it. We do not list on reputation.
+2. Someone at AB//LABS has read it. We do not list on reputation.
 3. It can be obtained: in print, through a library or publisher subscription, or free online. Out-of-print titles stay only when there is no replacement, and are marked.
 4. It has a full citation: authors in published order, publisher, year, and an ISBN-13 for the edition we recommend, or a DOI or stable address for papers and reports.
 5. It adds something the list does not already have. Two books on the same subject need a reason.
@@ -256,13 +256,13 @@ A title on this list is one we have read and found useful for illicit trade work
 
 - Proposals, corrections and dead links: the [issue form](https://github.com/atlas-bear/recommended-reading/issues/new/choose).
 - Questions and discussion: [GitHub Discussions](https://github.com/atlas-bear/recommended-reading/discussions).
-- Anything else: [support@atlasbear.co](mailto:support@atlasbear.co).
+- Anything else: [support@ab-labs.io](mailto:support@ab-labs.io).
 
 ### Acknowledgments
 
 Thanks to the authors who did the work these pages point to, to the Open Library and Crossref teams whose open registries make the identifiers checkable, and to the participants of the Summer School on Illicit Trade, whose questions decide what goes on this list.
 
-### Atlas Bear ecosystem
+### Our repositories
 
 | Repository | Purpose | Status |
 | --- | --- | --- |
@@ -273,4 +273,6 @@ Thanks to the authors who did the work these pages point to, to the Open Library
 | [cue-kit](https://github.com/atlas-bear/cue-kit) | Turn video into frames and transcripts for analysis | ![Last commit](https://img.shields.io/github/last-commit/atlas-bear/cue-kit) |
 | [mara-roadmap](https://github.com/atlas-bear/mara-roadmap) | Public roadmap and feedback for [MARA](https://maraiq.com), our maritime security intelligence platform | ![Last commit](https://img.shields.io/github/last-commit/atlas-bear/mara-roadmap) |
 
-Everything above is gathered at the [Atlas Bear Library](https://atlas-bear.github.io/). **Learn more:** [Atlas Bear Academy](https://www.atlasbear.academy), [atlasbear.co](https://atlasbear.co) and [Waterline](https://maraiq.substack.com/), our newsletter. **Contact:** [support@atlasbear.co](mailto:support@atlasbear.co).
+Everything above is gathered at the [Library](https://atlas-bear.github.io/). AB//LABS began as Atlas Bear Labs, the technical side of [Atlas Bear](https://atlasbear.co), and is now a company of its own. The two still work together, and our repositories keep the `atlas-bear` name on GitHub for now.
+
+**Learn more:** [ab-labs.io](https://ab-labs.io), [Atlas Bear](https://atlasbear.co) and its [Academy](https://www.atlasbear.academy), and [Waterline](https://maraiq.substack.com/), our newsletter. **Contact:** [support@ab-labs.io](mailto:support@ab-labs.io).

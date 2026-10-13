@@ -1,10 +1,10 @@
 cff-version: 1.2.0
 message: "If you use this list, please cite it as below."
 type: dataset
-title: "Atlas Bear Recommended Reading: books, reports and papers for illicit trade intelligence"
+title: "Recommended Reading: books, reports and papers for illicit trade intelligence"
 authors:
-  - name: "Atlas Bear Labs"
-    website: "https://atlasbear.co"
+  - name: "AB//LABS"
+    website: "https://ab-labs.io"
   - family-names: Clontz
     given-names: Ryan
     alias: rhinonix

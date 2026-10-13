@@ -10,7 +10,7 @@ Know a book, report or paper that belongs here? Please tell us. The easiest rout
 A title goes on the list when:
 
 1. It helps someone work on illicit trade, or on the economics, politics, places and methods around it. The "Wider reading" section exists for the second kind.
-2. Someone at Atlas Bear has read it. We do not list on reputation.
+2. Someone at AB//LABS has read it. We do not list on reputation.
 3. It can be obtained: in print, through a library or publisher subscription, or free online. Out-of-print titles stay only when there is no replacement, and are marked.
 4. It has a full citation: authors in published order, publisher, year, and an ISBN-13 for the edition we recommend, or a DOI or stable address for papers and reports.
 5. It adds something the list does not already have. Two books on the same subject need a reason.

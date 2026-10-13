@@ -24,7 +24,7 @@ import yaml
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 DATA = ROOT / "data" / "library.yml"
-UA = "atlas-bear-recommended-reading/2.0 (https://github.com/atlas-bear/recommended-reading; mailto:support@atlasbear.co)"
+UA = "atlas-bear-recommended-reading/2.0 (https://github.com/atlas-bear/recommended-reading; mailto:support@ab-labs.io)"
 PAUSE = 1.0
 
 
@@ -73,7 +73,7 @@ def check_isbn(isbn, stored_work):
 
 
 def check_doi(doi):
-    status, d = get_json("https://api.crossref.org/works/" + urllib.parse.quote(doi, safe="/") + "?mailto=support@atlasbear.co")
+    status, d = get_json("https://api.crossref.org/works/" + urllib.parse.quote(doi, safe="/") + "?mailto=support@ab-labs.io")
     if d and d.get("message", {}).get("DOI", "").lower() == doi.lower():
         return None
     time.sleep(PAUSE)

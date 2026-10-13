@@ -306,13 +306,13 @@ def index_body(items):
 ![Verify identifiers](https://github.com/atlas-bear/recommended-reading/actions/workflows/verify.yml/badge.svg)
 ![License](https://img.shields.io/github/license/atlas-bear/recommended-reading)
 
-> Part of the [Atlas Bear Library](https://atlas-bear.github.io/). Read this list as a website at [atlas-bear.github.io/recommended-reading](https://atlas-bear.github.io/recommended-reading/), or take it into your reference manager: [BibTeX](https://github.com/atlas-bear/recommended-reading/blob/main/exports/reading-list.bib), [CSL JSON](https://github.com/atlas-bear/recommended-reading/blob/main/exports/reading-list.json) (imports straight into Zotero) or [CSV](https://github.com/atlas-bear/recommended-reading/blob/main/exports/reading-list.csv).
+> Part of the [Library](https://atlas-bear.github.io/), by AB//LABS. Read this list as a website at [atlas-bear.github.io/recommended-reading](https://atlas-bear.github.io/recommended-reading/), or take it into your reference manager: [BibTeX](https://github.com/atlas-bear/recommended-reading/blob/main/exports/reading-list.bib), [CSL JSON](https://github.com/atlas-bear/recommended-reading/blob/main/exports/reading-list.json) (imports straight into Zotero) or [CSV](https://github.com/atlas-bear/recommended-reading/blob/main/exports/reading-list.csv).
 
 **Related resources:**
 
 - [Maritime and Supply Chain OSINT Tools](https://github.com/atlas-bear/osint-tools): the tools and data sources we use, also as a [website](https://atlas-bear.github.io/osint-tools/).
 - [AI-Enhanced OSINT](https://github.com/atlas-bear/osint-ai-guide): our guide to using AI in intelligence work, also as a [website](https://atlas-bear.github.io/osint-ai-guide/).
-- [Atlas Bear Academy](https://www.atlasbear.academy): our professional development programmes.
+- [Atlas Bear Academy](https://www.atlasbear.academy): professional development programmes from Atlas Bear, the company we spun off from.
 
 ---
 
@@ -341,7 +341,7 @@ The list lives in one data file, `data/library.yml`. A script builds this page, 
 
 
 def index_page(items):
-    return (front_matter("Atlas Bear Recommended Reading",
+    return (front_matter("Recommended Reading",
                          "Books, reports and papers for intelligence professionals working on illicit trade, with full citations.")
             + HEADER + index_body(items))
 
@@ -359,7 +359,7 @@ def include_page(path):
 # ---------- README ----------
 
 def readme(items):
-    out = ["# Atlas Bear Recommended Reading\n\n" + index_body(items).replace("(contributing.md)", "(#contributing)").strip()]
+    out = ["# Recommended Reading\n\n" + index_body(items).replace("(contributing.md)", "(#contributing)").strip()]
     # section links in the index point at pages; in the README they point at headings
     out[0] = re.sub(r"\]\(([a-z-]+)\.md#([^)]+)\)", r"](#\2)", out[0])
     out[0] = re.sub(r"\]\(([a-z-]+)\.md\)", lambda m: "](#" + slug(SECTION_TITLE[m.group(1)]) + ")", out[0])
@@ -440,7 +440,7 @@ def bibtex(items):
             f.append(("note", bib_escape(". ".join(notes))))
         body = ",\n".join(f"  {k} = {{{v}}}" for k, v in f)
         entries.append(f"@{kinds[it['type']]}{{{it['id']},\n{body}\n}}")
-    return "% Atlas Bear Recommended Reading. Generated from data/library.yml; do not edit by hand.\n% UTF-8. Use biber or a UTF-8 aware BibTeX, or import into Zotero.\n\n" + "\n\n".join(entries) + "\n"
+    return "% Recommended Reading, by AB//LABS. Generated from data/library.yml; do not edit by hand.\n% UTF-8. Use biber or a UTF-8 aware BibTeX, or import into Zotero.\n\n" + "\n\n".join(entries) + "\n"
 
 
 def csl_person(p):
