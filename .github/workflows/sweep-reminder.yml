@@ -1,0 +1,39 @@
+name: Sweep reminder
+
+on:
+  schedule:
+    - cron: "0 7 1 3 *"
+    - cron: "0 7 1 9 *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  remind:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Open the sweep issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          year=$(date -u +%Y)
+          season=$([ "$(date -u +%m)" -lt 7 ] && echo Spring || echo Autumn)
+          title="$season $year sweep of the reading list"
+          if [ "$(gh issue list --repo "${{ github.repository }}" --label sweep --state open --json number --jq 'length')" != "0" ]; then
+            echo "an open sweep issue already exists"; exit 0
+          fi
+          cat > /tmp/sweep.md <<'BODY'
+          Time for the twice-yearly sweep of the reading list. One branch, one PR; `last_checked` moves only for entries actually re-verified.
+
+          - [ ] For each title: still the edition to recommend? New edition, new translation, out of print? Update `edition`, `year`, `isbn13`, `access` and `rolling` titles (Bazzell) as needed.
+          - [ ] Run `python scripts/verify.py` and fix any ISBN or DOI that no longer resolves.
+          - [ ] Reports and papers: a newer edition of an annual (EU-SOCTA, Organized Crime Index, Allianz review)? Replace or add, with the new DOI or URL and an archived link.
+          - [ ] Review the open proposals; read before adding; decline with a reason.
+          - [ ] Re-read each "why read it" and "who it is for" for anything now stale; keep the plain voice.
+          - [ ] Run `python scripts/build_readme.py` (README, docs, exports); import `exports/reading-list.json` into Zotero once to confirm it still lands cleanly.
+          - [ ] Check for a newer stable Quarto and a newer release of `atlas-bear/quarto-theme`; bump the workflow pin and run `quarto update atlas-bear/quarto-theme` if so.
+          - [ ] CHANGELOG entry, version and date in CITATION.cff, merge, release.
+          BODY
+          gh issue create --repo "${{ github.repository }}" --label sweep --title "$title" --body-file /tmp/sweep.md
