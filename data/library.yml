@@ -1,0 +1,518 @@
+# Atlas Bear Recommended Reading: the single source for the list.
+#
+# scripts/build.py turns this file into README.md, the pages in docs/ and the
+# exports in exports/. Edit here, then run: python scripts/build.py
+#
+# Field notes
+#   id            BibTeX key and anchor, lowercase letters and digits only
+#   type          book | report | article | document
+#   authors       published order; each is {family, given} or {literal: "Organisation"}
+#   edition       an integer of 2 or more, or null for a first edition
+#   rolling       true for method books where we always mean the latest edition
+#   original_year first publication year, for reissues and translations (Chicago prints "(1998) 2002")
+#   isbn13        the edition we recommend, as 13 digits or hyphenated as printed; 978 or 979
+#   doi           bare DOI (no https prefix); null when there is none
+#   openlibrary   the Open Library work key, used only to verify the ISBN each month
+#   access        print | open | self-published | out-of-print  (print renders nothing)
+#   section       financial-crime | economics-politics | geopolitics | osint | reports | wider-reading
+#   start_here    at most one per section
+#   why           two or three plain sentences on why it matters for illicit trade work; no em dashes
+#   audience      one short line, rendered as "Who it is for"
+#   added         the date the title joined the list; last_checked the date its details were last verified
+
+items:
+
+  # ---------------------------------------------------------------- Financial crime and illicit networks
+
+  - id: findley2014
+    type: book
+    title: Global Shell Games
+    subtitle: "Experiments in Transnational Relations, Crime, and Terrorism"
+    authors:
+      - {family: Findley, given: Michael G.}
+      - {family: Nielson, given: Daniel L.}
+      - {family: Sharman, given: J. C.}
+    publisher: Cambridge University Press
+    place: Cambridge
+    year: 2014
+    isbn13: "9781107638839"
+    doi: "10.1017/CBO9781107337848"
+    openlibrary: OL17512806W
+    pages: 250
+    access: print
+    section: financial-crime
+    start_here: true
+    audience: analysts new to beneficial ownership and shell companies
+    why: >
+      An experimental study of how easy it is to set up an anonymous shell company. The authors posed as
+      consultants and approached nearly 4,000 corporate service providers in more than 180 countries, then
+      recorded who asked for identity documents and who did not. The results still frame how we think about
+      the gaps that let terrorist financing, corruption and arms trading through.
+    added: 2025-07-14
+    last_checked: 2026-10-13
+
+  - id: wittig2011
+    type: book
+    title: Understanding Terrorist Finance
+    authors:
+      - {family: Wittig, given: Timothy}
+    publisher: Palgrave Macmillan
+    place: Basingstoke
+    year: 2011
+    isbn13: "9781349332120"
+    doi: "10.1057/9780230316935"
+    openlibrary: OL27345445W
+    access: print
+    section: financial-crime
+    audience: counter-terrorism finance analysts
+    why: >
+      A framework for analysing terrorist finance that dispels the popular myths about how groups get and use
+      money. Wittig shows that terrorists work through everyday economic systems rather than a separate shadow
+      finance world, which changes where an analyst should look. Priced for libraries, so borrow it or read it
+      through a university subscription.
+    added: 2025-07-14
+    last_checked: 2026-10-13
+
+  - id: shelley2020
+    type: book
+    title: Dark Commerce
+    subtitle: How a New Illicit Economy Is Threatening Our Future
+    authors:
+      - {family: Shelley, given: Louise I.}
+    original_year: 2018
+    publisher: Princeton University Press
+    place: Princeton
+    year: 2020
+    isbn13: "9780691209760"
+    doi: "10.1515/9780691184296"
+    openlibrary: OL20186908W
+    pages: 376
+    access: print
+    section: financial-crime
+    audience: anyone who needs the big picture of illicit trade in one book
+    why: >
+      An account of how technology changed illicit trade, from drugs and people to wildlife and cybercrime.
+      Shelley shows how these markets connect to each other and how digital anonymity and globalisation let
+      them scale, which is the background every illicit trade analyst needs.
+    added: 2025-07-15
+    last_checked: 2026-10-13
+
+  # ---------------------------------------------------------------- Global economics and politics
+
+  - id: shaxson2012
+    type: book
+    title: Treasure Islands
+    subtitle: Tax Havens and the Men Who Stole the World
+    authors:
+      - {family: Shaxson, given: Nicholas}
+    original_year: 2011
+    publisher: Vintage
+    place: London
+    year: 2012
+    isbn13: "9780099541721"
+    openlibrary: OL15445291W
+    pages: 384
+    access: print
+    section: economics-politics
+    start_here: true
+    audience: readers new to offshore finance
+    why: >
+      A readable account of the offshore system: what tax havens are, how they grew and who benefits.
+      It explains the plumbing that most illicit trade investigations eventually run into.
+    added: 2024-07-15
+    last_checked: 2026-10-13
+
+  - id: nordstrom2007
+    type: book
+    title: Global Outlaws
+    subtitle: "Crime, Money, and Power in the Contemporary World"
+    authors:
+      - {family: Nordstrom, given: Carolyn}
+    publisher: University of California Press
+    place: Berkeley
+    year: 2007
+    isbn13: "9780520250963"
+    doi: "10.1525/9780520940635"
+    openlibrary: OL2661135W
+    pages: 256
+    access: print
+    section: economics-politics
+    audience: analysts who want fieldwork rather than statistics
+    why: >
+      An anthropologist follows smuggled goods and money across borders, from African ports to European
+      markets, and shows how illegal trade shapes economics and politics along the way. It is fieldwork
+      rather than statistics, and it reads like it.
+    added: 2024-07-15
+    last_checked: 2026-10-13
+
+  - id: little2003
+    type: book
+    title: Somalia
+    subtitle: Economy without State
+    authors:
+      - {family: Little, given: Peter D.}
+    publisher: Indiana University Press
+    place: Bloomington
+    year: 2003
+    isbn13: "9780253216489"
+    doi: "10.2979/3009.0"
+    openlibrary: OL4081483W
+    pages: 224
+    access: out-of-print
+    section: economics-politics
+    audience: anyone working on the Horn of Africa, or on trade where there is no state
+    why: >
+      How Somalia's economy kept working, and in places grew, without a central government: livestock
+      exports, remittances and trade networks that run on trust and clan. It challenges the assumption that
+      markets need a state, which matters for anyone working on ungoverned spaces.
+    added: 2024-07-15
+    last_checked: 2026-10-13
+
+  # ---------------------------------------------------------------- Geopolitics and strategy
+
+  - id: hopkirk2006
+    type: book
+    title: The Great Game
+    subtitle: On Secret Service in High Asia
+    authors:
+      - {family: Hopkirk, given: Peter}
+    original_year: 1990
+    publisher: John Murray
+    place: London
+    year: 2006
+    isbn13: "9780719564475"
+    openlibrary: OL19416941W
+    pages: 566
+    access: print
+    section: geopolitics
+    start_here: true
+    audience: anyone working on Central Asia, or who likes history told as a thriller
+    why: >
+      The nineteenth-century contest between Britain and Russia for Central Asia, told through the officers
+      and explorers who fought it. It is the background to borders, grievances and trade routes that are still
+      live, and it is a good story.
+    added: 2024-07-15
+    last_checked: 2026-10-13
+
+  - id: mcfate2020
+    type: book
+    title: The New Rules of War
+    subtitle: "How America Can Win Against Russia, China, and Other Threats"
+    authors:
+      - {family: McFate, given: Sean}
+    original_year: 2019
+    publisher: William Morrow
+    place: New York
+    year: 2020
+    isbn13: "9780062843593"
+    openlibrary: OL21347908W
+    pages: 336
+    access: print
+    section: geopolitics
+    audience: security professionals thinking about conflict below the threshold of war
+    why: >
+      How war has changed in the twenty-first century and why conventional doctrine keeps losing to it.
+      McFate's "durable disorder", in which states, mercenaries and criminal networks blur together, is the
+      environment much illicit trade work sits in.
+    added: 2024-07-15
+    last_checked: 2026-10-13
+
+  # ---------------------------------------------------------------- OSINT and digital investigation
+
+  - id: bazzell2024
+    type: book
+    title: OSINT Techniques
+    subtitle: Resources for Uncovering Online Information
+    authors:
+      - {family: Bazzell, given: Michael}
+    edition: 11
+    rolling: true
+    publisher: IntelTechniques
+    year: 2024
+    isbn13: null
+    url: https://inteltechniques.com/book1.html
+    access: self-published
+    section: osint
+    start_here: true
+    audience: anyone starting out in OSINT, and practitioners who want a current desk reference
+    why: >
+      The standard practical reference for finding and analysing publicly available information: search
+      methods, social media, virtual machines, custom tools, documentation and ethics. Bazzell rewrites it
+      every year or two, so buy the current edition and treat older ones as history.
+    added: 2024-09-19
+    last_checked: 2026-10-13
+
+  # ---------------------------------------------------------------- Reports and papers
+
+  - id: c4ads2025
+    type: report
+    title: Oil and Water
+    authors:
+      - {literal: C4ADS}
+    publisher: C4ADS
+    year: 2025
+    url: https://c4ads.org/wp-content/uploads/2025/06/OilWater-C4ADS.pdf
+    access: open
+    section: reports
+    start_here: true
+    audience: analysts tracking the shadow fleet
+    why: >
+      An investigation into the largest known dark fleet run by a single network: at least 56 supertankers
+      carrying Iranian, Venezuelan and later Russian crude to China, using dark voyages, ship-to-ship transfers
+      and GNSS spoofing to hide the oil's origin. A model of how to build a case from AIS, imagery and
+      corporate records.
+    added: 2026-10-13
+    last_checked: 2026-10-13
+
+  - id: rusi2025
+    type: report
+    title: "RUSI Maritime Sanctions Taskforce: Insurance and Flag States"
+    authors:
+      - {literal: "Royal United Services Institute, Centre for Finance and Security"}
+    publisher: RUSI
+    year: 2025
+    url: https://www.rusi.org/explore-our-research/publications/conference-reports/rusi-maritime-sanctions-taskforce-insurance-and-flag-states
+    access: open
+    section: reports
+    audience: policy and compliance readers working on sanctions enforcement
+    why: >
+      Findings from the taskforce's May 2025 meeting of about sixty government and industry members on
+      Russia's shadow fleet: what insurers can do, how to hold flag states to account, and how to target the
+      enablers. Short, and written for people who have to act on it.
+    added: 2026-10-13
+    last_checked: 2026-10-13
+
+  - id: europol2025
+    type: report
+    title: European Union Serious and Organised Crime Threat Assessment 2025
+    subtitle: The changing DNA of serious and organised crime
+    authors:
+      - {literal: Europol}
+    publisher: Publications Office of the European Union
+    year: 2025
+    url: https://europol.europa.eu/publication-events/main-reports/changing-dna-of-serious-and-organised-crime
+    access: open
+    section: reports
+    audience: anyone who needs the European picture of organised crime in one document
+    why: >
+      Europol's four-yearly assessment of organised crime in the EU: the criminal markets, how networks are
+      organised and what is changing, with a strong section on logistics and ports. The reference point for
+      European threat pictures until the next edition.
+    added: 2026-10-13
+    last_checked: 2026-10-13
+
+  - id: gitoc2025
+    type: report
+    title: Global Organized Crime Index 2025
+    authors:
+      - {literal: Global Initiative Against Transnational Organized Crime}
+    publisher: Global Initiative Against Transnational Organized Crime
+    year: 2025
+    url: https://ocindex.net/
+    access: open
+    section: reports
+    audience: analysts comparing countries or briefing on a new region
+    why: >
+      Scores for 193 countries on criminal markets, criminal actors and resilience, with the methodology
+      published and the data downloadable. The fastest way to get oriented on a country's illicit economy
+      before you read the detail.
+    added: 2026-10-13
+    last_checked: 2026-10-13
+
+  - id: ohchr2022
+    type: document
+    title: Berkeley Protocol on Digital Open Source Investigations
+    subtitle: "A Practical Guide on the Effective Use of Digital Open Source Information in Investigating Violations of International Criminal, Human Rights and Humanitarian Law"
+    authors:
+      - {literal: Office of the United Nations High Commissioner for Human Rights}
+      - {literal: "Human Rights Center, UC Berkeley School of Law"}
+    original_year: 2020
+    publisher: United Nations
+    number: HR/PUB/20/2
+    year: 2022
+    url: https://www.ohchr.org/sites/default/files/2024-01/OHCHR_BerkeleyProtocol.pdf
+    access: open
+    section: reports
+    audience: investigators whose findings may end up in a courtroom
+    why: >
+      The standard for open source investigations that need to stand up to legal scrutiny: principles,
+      methods, preservation and verification, and the ethics of handling material. If you read one
+      methodology document, read this one.
+    added: 2026-10-13
+    last_checked: 2026-10-13
+
+  - id: unaishandbook2020
+    type: document
+    title: AIS Handbook
+    authors:
+      - {literal: "UN Committee of Experts on Big Data and Data Science for Official Statistics, AIS Task Team"}
+    publisher: United Nations Statistics Division
+    year: 2020
+    url: https://unstats.un.org/wiki/spaces/AIS/overview
+    accessed: 2026-10-13
+    access: open
+    section: reports
+    audience: anyone cleaning or analysing AIS data for the first time
+    why: >
+      A method handbook for working with AIS data: what the messages contain, how to clean them, how to
+      derive port calls and voyages, and the pitfalls. Written for statisticians, which is why it is careful
+      about what the data can and cannot show.
+    added: 2026-10-13
+    last_checked: 2026-10-13
+
+  - id: ogundoyin2025
+    type: article
+    title: Unsafe by Design?
+    subtitle: A First Look at Security and Privacy Risks in OpenAI's Custom GPT Ecosystem
+    authors:
+      - {family: Ogundoyin, given: Sunday Oyinlola}
+      - {family: Ikram, given: Muhammad}
+      - {family: Asghar, given: Hassan Jameel}
+      - {family: Zhao, given: Benjamin Zi Hao}
+      - {family: Kaafar, given: Dali}
+    journal: Proceedings of the 24th Workshop on Privacy in the Electronic Society (WPES '25)
+    publisher: ACM
+    year: 2025
+    page_range: "147-161"
+    doi: "10.1145/3733802.3764054"
+    url: https://arxiv.org/abs/2505.08148
+    access: open
+    section: reports
+    audience: anyone who uses or builds custom GPTs for analysis
+    why: >
+      An analysis of 14,904 custom GPTs that found most lacked basic protections: system prompts leak,
+      roleplay and phishing attacks succeed, and the marketplace does little about it. Read it before you
+      trust a third-party GPT with case material. The arXiv version is free to read.
+    added: 2026-10-13
+    last_checked: 2026-10-13
+
+  - id: hutten2025
+    type: article
+    title: Maritime Activities Observed Through Open-Access Positioning Data
+    subtitle: Moving and Stationary Vessels in the Baltic Sea
+    authors:
+      - {family: Hütten, given: Moritz}
+    journal: arXiv preprint
+    year: 2025
+    doi: "10.48550/arXiv.2511.23016"
+    url: https://arxiv.org/abs/2511.23016
+    access: open
+    section: reports
+    audience: analysts deciding whether free AIS data is good enough for a question
+    why: >
+      A study that rebuilt Baltic Sea vessel activity from open AIS data alone and came within about
+      20 percent of results from proprietary data. It is the best evidence we have for when the free
+      sources are enough.
+    added: 2026-10-13
+    last_checked: 2026-10-13
+
+  - id: allianz2026
+    type: report
+    title: Safety and Shipping Review 2026
+    authors:
+      - {literal: Allianz Commercial}
+    publisher: Allianz Commercial
+    year: 2026
+    url: https://commercial.allianz.com/news-and-insights/reports/shipping-safety.html
+    access: open
+    section: reports
+    audience: anyone who needs the annual picture of what goes wrong at sea
+    why: >
+      The annual review of ship losses, casualties and emerging risks from one of the largest marine
+      insurers. It is where the shadow fleet, GNSS interference and port congestion show up as insurance
+      numbers.
+    added: 2026-10-13
+    last_checked: 2026-10-13
+
+  # ---------------------------------------------------------------- Wider reading
+
+  - id: mathews2011
+    type: book
+    title: Ghetto at the Center of the World
+    subtitle: "Chungking Mansions, Hong Kong"
+    authors:
+      - {family: Mathews, given: Gordon}
+    publisher: University of Chicago Press
+    place: Chicago
+    year: 2011
+    isbn13: "9780226510200"
+    doi: "10.7208/chicago/9780226510217.001.0001"
+    openlibrary: OL15520821W
+    pages: 241
+    access: print
+    section: wider-reading
+    start_here: true
+    audience: anyone interested in how low-end globalisation actually works
+    why: >
+      An ethnography of one building in Hong Kong where traders from South Asia and Africa buy phones and
+      clothes to carry home. It is the best short account we know of low-end globalisation, the informal trade
+      that moves goods across the Global South.
+    added: 2024-07-15
+    last_checked: 2026-10-13
+
+  - id: kapuscinski2002
+    type: book
+    title: The Shadow of the Sun
+    authors:
+      - {family: Kapuściński, given: Ryszard}
+    translators:
+      - {family: Glowczewska, given: Klara}
+    original_year: 1998
+    publisher: Vintage
+    place: New York
+    year: 2002
+    isbn13: "9780679779070"
+    openlibrary: OL2424280W
+    access: print
+    section: wider-reading
+    audience: anyone heading to Africa for work for the first time
+    why: >
+      Forty years of reporting from across Africa, from independence to the 1990s, by a Polish correspondent
+      who travelled poor and listened. It teaches how to see a place before you analyse it.
+    added: 2024-07-15
+    last_checked: 2026-10-13
+
+  - id: hao2025
+    type: book
+    title: Empire of AI
+    subtitle: Dreams and Nightmares in Sam Altman's OpenAI
+    authors:
+      - {family: Hao, given: Karen}
+    publisher: Penguin Press
+    place: New York
+    year: 2025
+    isbn13: "9780593657508"
+    openlibrary: OL42453624W
+    pages: 496
+    access: print
+    section: wider-reading
+    audience: anyone using AI tools at work who wants to know who built them and at what cost
+    why: >
+      A reporter's account of OpenAI and the race for AI dominance, including the labour in the Global South
+      and the environmental cost behind the products. Useful background for anyone using these tools in
+      intelligence work, and a reminder of where the power sits.
+    added: 2025-07-14
+    last_checked: 2026-10-13
+
+  - id: kaussler2020
+    type: book
+    title: Rhetoric and Governance under Trump
+    subtitle: Proclamations from the Bullshit Pulpit
+    authors:
+      - {family: Kaussler, given: Bernd}
+      - {family: Kristiansen, given: Lars J.}
+      - {family: Delbert, given: Jeffrey}
+    publisher: Lexington Books
+    place: Lanham
+    year: 2020
+    isbn13: "9781498594851"
+    openlibrary: OL21689919W
+    access: print
+    section: wider-reading
+    audience: readers interested in how political language shapes institutions
+    why: >
+      An academic study of how rhetoric shaped governance during the first Trump administration, and what
+      it did to institutions. We include it because the language of power is part of the environment analysts
+      report on.
+    added: 2025-07-14
+    last_checked: 2026-10-13
