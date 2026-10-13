@@ -1,8 +1,11 @@
-## Contributing
+---
+title: "Contributing"
+description: "How to propose a title and the format every entry follows."
+---
 
 Know a book, report or paper that belongs here? Please tell us. The easiest route is the [issue form](https://github.com/atlas-bear/recommended-reading/issues/new/choose), which needs no YAML. If you prefer a pull request, add a block to `data/library.yml` in the format below. We reply to every proposal, whether or not we add the title.
 
-### What earns a place
+## What earns a place
 
 A title goes on the list when:
 
@@ -14,7 +17,7 @@ A title goes on the list when:
 
 Authors and publishers are welcome to propose their own work if they say so. We treat those proposals exactly like any other and read the work before deciding.
 
-### The entry format
+## The entry format
 
 Every title is one block in `data/library.yml`. The fields are explained in the comment at the top of that file. A book looks like this:
 
@@ -49,7 +52,7 @@ A few rules keep the list consistent:
 - **The "why" is plain.** Two or three sentences in ordinary words about what the reader gets, tied to illicit trade work. No marketing language and no em dashes. **The "audience"** is one short line.
 - **No retailer links.** Titles link to Open Library or to the DOI. We do not use affiliate links, prices or ratings.
 
-### Generated files
+## Generated files
 
 `README.md`, the list pages in `docs/`, and the files in `exports/` are built from `data/library.yml` by `scripts/build.py`. Please do not edit them directly; the check on every pull request will fail if they differ from the YAML. If you can run Python, run the script and commit everything it changes. If not, tick "Allow edits by maintainers" and we will regenerate on your branch.
 
@@ -62,6 +65,6 @@ python scripts/verify.py         # check ISBNs and DOIs against the registries (
 
 The build checks every ISBN's check digit, the shape of every DOI, duplicate identifiers and the required fields. Once a month a workflow checks each ISBN against Open Library and each DOI against Crossref or DataCite, and opens an issue if something no longer resolves.
 
-### Reviews and releases
+## Reviews and releases
 
 We sweep the whole list twice a year with our other lists, in spring before the [Summer School on Illicit Trade](https://www.rug.nl/education/summer-winter-schools/illicit-trade) and again in autumn: editions, availability and whether each title still earns its place. Each sweep ends with a release and a [CHANGELOG](https://github.com/atlas-bear/recommended-reading/blob/main/CHANGELOG.md) entry. Please keep to our [community guidelines](https://github.com/atlas-bear/recommended-reading/blob/main/COMMUNITY_GUIDELINES.md) in issues and pull requests.

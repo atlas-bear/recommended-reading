@@ -387,12 +387,12 @@ items:
     last_checked: 2026-10-13
 
   - id: hutten2025
-    type: article
+    type: document
     title: Maritime Activities Observed Through Open-Access Positioning Data
     subtitle: Moving and Stationary Vessels in the Baltic Sea
     authors:
       - {family: Hütten, given: Moritz}
-    journal: arXiv preprint
+    publisher: arXiv
     year: 2025
     doi: "10.48550/arXiv.2511.23016"
     url: https://arxiv.org/abs/2511.23016

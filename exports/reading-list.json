@@ -188,7 +188,7 @@
   },
   {
     "id": "hutten2025",
-    "type": "article-journal",
+    "type": "document",
     "title": "Maritime Activities Observed Through Open-Access Positioning Data: Moving and Stationary Vessels in the Baltic Sea",
     "author": [
       {
@@ -203,9 +203,9 @@
         ]
       ]
     },
+    "publisher": "arXiv",
     "DOI": "10.48550/arXiv.2511.23016",
     "URL": "https://arxiv.org/abs/2511.23016",
-    "container-title": "arXiv preprint",
     "abstract": "A study that rebuilt Baltic Sea vessel activity from open AIS data alone and came within about 20 percent of results from proprietary data. It is the best evidence we have for when the free sources are enough."
   },
   {

@@ -1,6 +1,9 @@
-<!-- GENERATED FILE. Do not edit by hand. Edit data/library.yml and run: python scripts/build.py -->
+---
+title: "Atlas Bear Recommended Reading"
+description: "Books, reports and papers for intelligence professionals working on illicit trade, with full citations."
+---
 
-# Atlas Bear Recommended Reading
+<!-- GENERATED FILE. Do not edit by hand. Edit data/library.yml and run: python scripts/build.py -->
 
 ![Titles](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fatlas-bear%2Frecommended-reading%2Fmain%2Fexports%2Freading-list.json&query=%24.length&label=titles&color=blue)
 ![Check list](https://github.com/atlas-bear/recommended-reading/actions/workflows/check.yml/badge.svg)

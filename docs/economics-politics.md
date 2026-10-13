@@ -1,6 +1,8 @@
-<!-- GENERATED FILE. Do not edit by hand. Edit data/library.yml and run: python scripts/build.py -->
+---
+title: "Global economics and politics"
+---
 
-## Global economics and politics
+<!-- GENERATED FILE. Do not edit by hand. Edit data/library.yml and run: python scripts/build.py -->
 
 The wider economy that illicit trade lives inside: offshore finance, informal markets and states that work differently from the textbook.
 

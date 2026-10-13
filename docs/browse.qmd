@@ -1,0 +1,16 @@
+---
+title: "Browse"
+description: "Every title on one page, filterable by section and type."
+listing:
+  contents: listing.yml
+  type: grid
+  grid-columns: 3
+  sort: false
+  categories: true
+  fields: [title, subtitle, description, categories]
+  filter-ui: true
+  page-size: 30
+toc: false
+---
+
+Every title on the list as a card. Use the filter box to search, or click a section or type on the right to narrow the grid. Each card opens the full entry on its section page.

@@ -5,9 +5,6 @@ on:
   push:
     branches: [main]
 
-env:
-  NO_MKDOCS_2_WARNING: "1"
-
 permissions:
   contents: read
 
@@ -22,22 +19,25 @@ jobs:
         with:
           python-version: "3.12"
           cache: pip
-          cache-dependency-path: requirements-docs.txt
-      - run: pip install -r requirements-docs.txt
+          cache-dependency-path: requirements.txt
+      - run: pip install -r requirements.txt
       - name: Generated files were not edited by hand
         if: github.event_name == 'pull_request'
         run: |
           changed=$(git diff --name-only "origin/${{ github.base_ref }}...HEAD")
-          generated=$(echo "$changed" | grep -E '^(README\.md|exports/.*|docs/(index|financial-crime|economics-politics|geopolitics|osint|reports|wider-reading)\.md)$' || true)
+          generated=$(echo "$changed" | grep -E '^(README\.md|exports/.*|docs/listing\.yml|docs/(index|financial-crime|economics-politics|geopolitics|osint|reports|wider-reading)\.md)$' || true)
           if [ -n "$generated" ] && ! echo "$changed" | grep -qE '^(data/library\.yml|scripts/build\.py)$'; then
-            msg="README.md, exports/ and the list pages in docs/ are generated from data/library.yml. Edit the YAML (or use the issue form) and run: python scripts/build.py"
+            msg="README.md, exports/, docs/listing.yml and the list pages in docs/ are generated from data/library.yml. Edit the YAML (or use the issue form) and run: python scripts/build.py"
             echo "::error file=data/library.yml::$msg"
             echo "$msg" >> "$GITHUB_STEP_SUMMARY"
             exit 1
           fi
       - name: README, docs and exports match data/library.yml
         run: python scripts/build.py --check
-      - name: Site builds without warnings
-        run: mkdocs build --strict
+      - uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: "1.10.19"
+      - name: Site renders without errors
+        run: quarto render docs
       - name: Markdown lint
         run: npx --yes markdownlint-cli2 "README.md" "docs/**/*.md" "CHANGELOG.md" "CONTRIBUTING.md" "COMMUNITY_GUIDELINES.md"

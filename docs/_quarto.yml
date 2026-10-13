@@ -1,0 +1,73 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - "*.md"
+    - "*.qmd"
+
+website:
+  title: "Atlas Bear Recommended Reading"
+  description: "Books, reports and papers for intelligence professionals working on illicit trade, with full citations and downloadable references."
+  site-url: https://atlas-bear.github.io/recommended-reading/
+  repo-url: https://github.com/atlas-bear/recommended-reading
+  repo-subdir: docs
+  repo-actions: [issue]
+  favicon: favicon.svg
+  search:
+    location: navbar
+    type: overlay
+  navbar:
+    left:
+      - text: Start here
+        href: index.md
+      - text: Browse
+        href: browse.qmd
+      - text: References
+        href: references.qmd
+    right:
+      - text: Atlas Bear Library
+        href: https://atlas-bear.github.io/
+  sidebar:
+    style: docked
+    collapse-level: 2
+    contents:
+      - index.md
+      - section: Sections
+        contents:
+          - financial-crime.md
+          - economics-politics.md
+          - geopolitics.md
+          - osint.md
+          - reports.md
+          - wider-reading.md
+      - browse.qmd
+      - references.qmd
+      - contributing.md
+      - about.md
+  page-footer:
+    left: "Copyright 2024-2026 Atlas Bear. List and data files licensed MIT."
+    right:
+      - text: Atlas Bear Library
+        href: https://atlas-bear.github.io/
+      - text: atlasbear.co
+        href: https://atlasbear.co
+      - text: Contact
+        href: mailto:support@atlasbear.co
+
+format:
+  html:
+    theme:
+      light: [flatly, theme.scss]
+      dark: [darkly, theme-dark.scss]
+    include-after-body:
+      text: '<script src="repo-stats.js"></script>'
+    grid:
+      sidebar-width: 270px
+      body-width: 820px
+      margin-width: 230px
+      gutter-width: 1.5rem
+    toc: true
+    toc-depth: 2
+    link-external-icon: false
+    link-external-newwindow: false
+    smooth-scroll: true

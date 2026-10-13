@@ -4,6 +4,10 @@ All notable changes to this list are recorded here. The format follows [Keep a C
 
 ## [Unreleased]
 
+### Changed
+
+- The website is now built with Quarto instead of MkDocs Material: the same generated pages, plus a Browse page (a filterable card grid of every title) and a References page rendered by Quarto's citation processor from the CSL JSON export. MkDocs was pinned to a version line that has stopped receiving updates.
+
 ## [2.0.0] - 2026-10-13
 
 A rebuild. The list moved from prose bullets to a single data file with full citations, and gained a website, downloads for reference managers, and monthly checks of every identifier.

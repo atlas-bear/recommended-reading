@@ -1,0 +1,13 @@
+---
+title: "References"
+description: "Every title on the list as a formatted reference, generated from the same data as the pages."
+bibliography: ../exports/reading-list.json
+csl: chicago-author-date.csl
+nocite: "@*"
+toc: false
+---
+
+Every title on the list, formatted in Chicago author-date style by Quarto's citation processor from the CSL JSON file the build script generates. The same file imports into Zotero; the BibTeX version is in the repository's `exports/` folder. If a reference here differs from the citation line on a section page, the data is right and one of the two renderers is wrong, so please tell us.
+
+::: {#refs}
+:::
