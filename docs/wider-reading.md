@@ -1,5 +1,6 @@
 ---
 title: "Wider reading"
+description: "Books that are not about illicit trade but that we keep recommending anyway, because of what they teach about places, people or power."
 ---
 
 <!-- GENERATED FILE. Do not edit by hand. Edit data/library.yml and run: python scripts/build.py -->

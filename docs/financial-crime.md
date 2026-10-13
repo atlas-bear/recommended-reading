@@ -1,5 +1,6 @@
 ---
 title: "Financial crime and illicit networks"
+description: "How dirty money moves, who moves it and why the system lets them."
 ---
 
 <!-- GENERATED FILE. Do not edit by hand. Edit data/library.yml and run: python scripts/build.py -->
