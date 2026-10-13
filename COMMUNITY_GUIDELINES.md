@@ -135,4 +135,4 @@ These guidelines are adapted from best practices in the open source and intellig
 
 ---
 
-_Thank you for being part of the Atlas Bear community and helping us build valuable resources for intelligence professionals worldwide._
+*Thank you for being part of the Atlas Bear community and helping us build valuable resources for intelligence professionals worldwide.*

@@ -1,0 +1,64 @@
+name: Propose a book, report or paper
+description: Suggest a title for the reading list. No YAML or Markdown needed.
+title: "Propose: <title>"
+labels: [proposal]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks. We check every proposal against the criteria in [Contributing](https://github.com/atlas-bear/recommended-reading/blob/main/docs/contributing.md) and reply either way.
+  - type: input
+    id: title
+    attributes:
+      label: Title and subtitle
+    validations:
+      required: true
+  - type: input
+    id: authors
+    attributes:
+      label: Authors or issuing organisation
+      description: In the order printed on the work.
+    validations:
+      required: true
+  - type: input
+    id: published
+    attributes:
+      label: Publisher and year
+      placeholder: Princeton University Press, 2018
+    validations:
+      required: true
+  - type: input
+    id: identifier
+    attributes:
+      label: ISBN-13, DOI or stable URL
+      description: The ISBN of the edition you recommend, the DOI for a paper or report, or the publisher's page when neither exists.
+    validations:
+      required: true
+  - type: dropdown
+    id: section
+    attributes:
+      label: Section
+      options:
+        - Financial crime and illicit networks
+        - Global economics and politics
+        - Geopolitics and strategy
+        - OSINT and digital investigation
+        - Reports and papers
+        - Wider reading
+        - Not sure
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why read it, and who is it for?
+      description: Two or three plain sentences on what it adds for someone working on illicit trade, and one line on the reader it suits.
+    validations:
+      required: true
+  - type: input
+    id: affiliation
+    attributes:
+      label: Your connection to the work
+      description: Write "none", or say how you are connected (author, publisher, employer).
+    validations:
+      required: true

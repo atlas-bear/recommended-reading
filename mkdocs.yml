@@ -1,0 +1,86 @@
+site_name: Atlas Bear Recommended Reading
+site_description: Books, reports and papers for intelligence professionals working on illicit trade, with full citations and downloadable references
+site_url: https://atlas-bear.github.io/recommended-reading/
+repo_url: https://github.com/atlas-bear/recommended-reading
+repo_name: atlas-bear/recommended-reading
+edit_uri: edit/main/docs/
+copyright: Copyright &copy; 2024-2026 Atlas Bear. List and data files licensed MIT.
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.action.edit
+    - content.code.copy
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue grey
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue grey
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+nav:
+  - Start here: index.md
+  - Financial crime and illicit networks: financial-crime.md
+  - Global economics and politics: economics-politics.md
+  - Geopolitics and strategy: geopolitics.md
+  - OSINT and digital investigation: osint.md
+  - Reports and papers: reports.md
+  - Wider reading: wider-reading.md
+  - Contributing: contributing.md
+  - About, licence and contact: about.md
+  - Atlas Bear Library: https://atlas-bear.github.io/
+
+extra:
+  social:
+    - icon: material/home
+      link: https://atlas-bear.github.io/
+      name: Atlas Bear Library
+    - icon: material/github
+      link: https://github.com/atlas-bear
+      name: Atlas Bear Labs on GitHub
+
+markdown_extensions:
+  - tables
+  - attr_list
+  - md_in_html
+  - admonition
+  - toc:
+      permalink: true
+  - pymdownx.superfences
+  - pymdownx.details
+
+plugins:
+  - search
+  - git-revision-date-localized:
+      type: date
+      fallback_to_build_date: true
+
+validation:
+  nav:
+    omitted_files: warn
+    not_found: warn
+    absolute_links: warn
+  links:
+    not_found: warn
+    anchors: warn
+    absolute_links: warn
+    unrecognized_links: warn
+
+strict: true

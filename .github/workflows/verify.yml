@@ -1,0 +1,52 @@
+name: Verify identifiers
+
+on:
+  pull_request:
+    paths: ["data/library.yml", "scripts/verify.py"]
+  schedule:
+    - cron: "53 6 1 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pyyaml
+      - name: Check every ISBN against Open Library and every DOI against Crossref or DataCite
+        id: verify
+        run: |
+          set +e
+          python scripts/verify.py --report verify-report.md
+          echo "exit_code=$?" >> "$GITHUB_OUTPUT"
+      - name: Fail a pull request on a mismatch
+        if: github.event_name == 'pull_request' && steps.verify.outputs.exit_code == '1'
+        run: |
+          cat verify-report.md >> "$GITHUB_STEP_SUMMARY"
+          exit 1
+      - name: Find the open verify issue
+        if: github.event_name != 'pull_request' && steps.verify.outputs.exit_code == '1'
+        id: issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: echo "number=$(gh issue list --label verify --state open --json number --jq '.[0].number')" >> "$GITHUB_OUTPUT"
+      - name: Open or update the verify issue
+        if: github.event_name != 'pull_request' && steps.verify.outputs.exit_code == '1'
+        uses: peter-evans/create-issue-from-file@v6
+        with:
+          title: Identifier check report
+          content-filepath: verify-report.md
+          issue-number: ${{ steps.issue.outputs.number }}
+          labels: verify
+      - name: Fail on a network problem without opening an issue
+        if: steps.verify.outputs.exit_code == '2'
+        run: |
+          cat verify-report.md >> "$GITHUB_STEP_SUMMARY"
+          exit 2

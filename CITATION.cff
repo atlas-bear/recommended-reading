@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this list, please cite it as below."
+type: dataset
+title: "Atlas Bear Recommended Reading: books, reports and papers for illicit trade intelligence"
+authors:
+  - name: "Atlas Bear Labs"
+    website: "https://atlasbear.co"
+  - family-names: Clontz
+    given-names: Ryan
+    alias: rhinonix
+version: "2.0.0"
+date-released: "2026-10-13"
+license: MIT
+repository-code: "https://github.com/atlas-bear/recommended-reading"
+url: "https://atlas-bear.github.io/recommended-reading/"
+abstract: "A curated, cited reading list for intelligence professionals working on illicit trade, with ISBN-13s, DOIs, Chicago author-date citations and BibTeX and CSL JSON exports generated from a single YAML source."
+keywords:
+  - reading list
+  - bibliography
+  - illicit trade
+  - OSINT
+  - financial crime
+  - maritime security

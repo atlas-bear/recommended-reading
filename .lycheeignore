@@ -1,0 +1,21 @@
+# Identifier hosts: they serve bot checks or redirect to walled publisher pages.
+# ISBNs and DOIs are verified by scripts/verify.py instead (see .github/workflows/verify.yml).
+https://openlibrary.org
+https://search.worldcat.org
+https://www.worldcat.org
+https://doi.org
+# Slow and rate-limited for automated requests.
+https://web.archive.org
+# Challenge pages for automated requests; open normally in a browser.
+https://commercial.allianz.com
+https://www.rusi.org
+https://rusi.org
+https://inteltechniques.com
+# Our own repository files and workflow badges: their existence is checked by the build, and they 404 on a branch before merge.
+https://github.com/atlas-bear/recommended-reading/blob/main/
+https://github.com/atlas-bear/recommended-reading/actions/
+# Temporary until GitHub Pages is enabled for this repository and the hub exists; remove afterwards.
+https://atlas-bear.github.io/recommended-reading/
+https://atlas-bear.github.io/
+# Substack blocks automated requests.
+https://maraiq.substack.com
