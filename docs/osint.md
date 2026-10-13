@@ -1,6 +1,8 @@
-<!-- GENERATED FILE. Do not edit by hand. Edit data/library.yml and run: python scripts/build.py -->
+---
+title: "OSINT and digital investigation"
+---
 
-## OSINT and digital investigation
+<!-- GENERATED FILE. Do not edit by hand. Edit data/library.yml and run: python scripts/build.py -->
 
 Method books for finding and checking information in the open. Method moves fast, so we cite the latest edition and review these every year.
 

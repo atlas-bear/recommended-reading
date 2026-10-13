@@ -1,24 +1,27 @@
-## About, licence and contact
+---
+title: "About, licence and contact"
+description: "Licence, disclaimer, contact and the rest of the Atlas Bear ecosystem."
+---
 
-### Licence
+## Licence
 
 The list, the text and the data files (`data/library.yml` and everything in `exports/`) are released under the [MIT License](https://github.com/atlas-bear/recommended-reading/blob/main/LICENSE). The works we cite belong to their authors and publishers.
 
-### Disclaimer
+## Disclaimer
 
 A title on this list is one we have read and found useful for illicit trade work. That is the whole claim. We have no connection to the publishers, we take no commissions, and we link to Open Library and to DOIs rather than to any shop. Editions and prices change; the ISBN we give is the edition we checked on the date at the bottom of each page, and the monthly check tells us when a record moves.
 
-### Contact and support
+## Contact and support
 
 - Proposals, corrections and dead links: the [issue form](https://github.com/atlas-bear/recommended-reading/issues/new/choose).
 - Questions and discussion: [GitHub Discussions](https://github.com/atlas-bear/recommended-reading/discussions).
 - Anything else: [support@atlasbear.co](mailto:support@atlasbear.co).
 
-### Acknowledgments
+## Acknowledgments
 
 Thanks to the authors who did the work these pages point to, to the Open Library and Crossref teams whose open registries make the identifiers checkable, and to the participants of the Summer School on Illicit Trade, whose questions decide what goes on this list.
 
-### Atlas Bear ecosystem
+## Atlas Bear ecosystem
 
 | Repository | Purpose | Status |
 | --- | --- | --- |

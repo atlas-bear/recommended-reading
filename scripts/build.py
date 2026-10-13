@@ -266,9 +266,17 @@ def section_body(items, key):
     return body, latest
 
 
+def front_matter(title, description=None):
+    fm = f"---\ntitle: \"{title}\"\n"
+    if description:
+        fm += f"description: \"{description}\"\n"
+    return fm + "---\n\n"
+
+
 def section_page(items, key, title, intro):
     body, latest = section_body(items, key)
-    return (f"{HEADER}## {title}\n\n{intro}\n\n{GENERATED_NOTE}\n\n{body}\n\n*Last checked {latest}.*\n")
+    return (front_matter(title) + HEADER
+            + f"{intro}\n\n{GENERATED_NOTE}\n\n{body}\n\n*Last checked {latest}.*\n")
 
 
 SECTION_INTROS = {
@@ -281,7 +289,7 @@ SECTION_INTROS = {
 }
 
 
-def index_page(items):
+def index_body(items):
     picks = [it for it in sorted(items, key=sort_key) if it.get("start_here")]
     lines = []
     for key, title in SECTIONS:
@@ -292,9 +300,7 @@ def index_page(items):
     picks_md = "\n".join(lines)
     counts = {key: sum(1 for it in items if it["section"] == key) for key, _ in SECTIONS}
     toc = "\n".join(f"- [{title}]({key}.md) ({counts[key]})" for key, title in SECTIONS if counts[key])
-    return f"""{HEADER}# Atlas Bear Recommended Reading
-
-![Titles](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fatlas-bear%2Frecommended-reading%2Fmain%2Fexports%2Freading-list.json&query=%24.length&label=titles&color=blue)
+    return f"""![Titles](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fatlas-bear%2Frecommended-reading%2Fmain%2Fexports%2Freading-list.json&query=%24.length&label=titles&color=blue)
 ![Check list](https://github.com/atlas-bear/recommended-reading/actions/workflows/check.yml/badge.svg)
 ![Check links](https://github.com/atlas-bear/recommended-reading/actions/workflows/links.yml/badge.svg)
 ![Verify identifiers](https://github.com/atlas-bear/recommended-reading/actions/workflows/verify.yml/badge.svg)
@@ -334,10 +340,26 @@ The list lives in one data file, `data/library.yml`. A script builds this page, 
 """
 
 
+def index_page(items):
+    return (front_matter("Atlas Bear Recommended Reading",
+                         "Books, reports and papers for intelligence professionals working on illicit trade, with full citations.")
+            + HEADER + index_body(items))
+
+
+def include_page(path):
+    """A hand-written docs page as a README section: front-matter title becomes an H2."""
+    text = path.read_text(encoding="utf-8")
+    m = re.match(r"^---\ntitle: \"([^\"]+)\"\n(?:.*?\n)*?---\n", text, re.S)
+    title = m.group(1) if m else path.stem.title()
+    body = text[m.end():] if m else text
+    body = re.sub(r"^(#{1,5}) ", lambda h: "#" + h.group(1) + " ", body, flags=re.M)   # one level down under the H2
+    return f"## {title}\n\n{body.strip()}"
+
+
 # ---------- README ----------
 
 def readme(items):
-    out = [index_page(items).replace("(contributing.md)", "(#contributing)").strip()]
+    out = ["# Atlas Bear Recommended Reading\n\n" + index_body(items).replace("(contributing.md)", "(#contributing)").strip()]
     # section links in the index point at pages; in the README they point at headings
     out[0] = re.sub(r"\]\(([a-z-]+)\.md#([^)]+)\)", r"](#\2)", out[0])
     out[0] = re.sub(r"\]\(([a-z-]+)\.md\)", lambda m: "](#" + slug(SECTION_TITLE[m.group(1)]) + ")", out[0])
@@ -345,8 +367,8 @@ def readme(items):
         body, latest = section_body(items, key)
         if body:
             out.append(f"## {title}\n\n{SECTION_INTROS[key]}\n\n{body}\n\n*Last checked {latest}.*")
-    out.append((DOCS / "contributing.md").read_text(encoding="utf-8").strip())
-    out.append((DOCS / "about.md").read_text(encoding="utf-8").strip())
+    out.append(include_page(DOCS / "contributing.md"))
+    out.append(include_page(DOCS / "about.md"))
     text = "\n\n---\n\n".join(out) + "\n"
     text = text.replace("](https://github.com/atlas-bear/recommended-reading/blob/main/", "](")
     return text
@@ -477,12 +499,27 @@ def csv_text(items):
     return buf.getvalue()
 
 
+def listing_yaml(items):
+    """Items for the Browse page: a Quarto listing rendered as a card grid."""
+    rows = []
+    for it in sorted(items, key=lambda x: (x["section"], sort_key(x))):
+        rows.append({
+            "title": full_title(it),
+            "subtitle": f"{name_list(it['authors'])}, {it['year']}",
+            "description": it["why"],
+            "path": f"{it['section']}.html#{it['id']}",
+            "categories": [SECTION_TITLE[it["section"]], it["type"].capitalize()],
+        })
+    return ("# GENERATED FILE. Do not edit by hand. Edit data/library.yml and run: python scripts/build.py\n"
+            + yaml.safe_dump(rows, allow_unicode=True, sort_keys=False, width=1000))
+
+
 # ---------- main ----------
 
 def outputs(items):
     files = {README: readme(items), DOCS / "index.md": index_page(items),
              EXPORTS / "reading-list.bib": bibtex(items), EXPORTS / "reading-list.json": csl_json(items),
-             EXPORTS / "reading-list.csv": csv_text(items)}
+             EXPORTS / "reading-list.csv": csv_text(items), DOCS / "listing.yml": listing_yaml(items)}
     for key, title in SECTIONS:
         if any(it["section"] == key for it in items):
             files[DOCS / f"{key}.md"] = section_page(items, key, title, SECTION_INTROS[key])

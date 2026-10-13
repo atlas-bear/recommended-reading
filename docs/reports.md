@@ -1,6 +1,8 @@
-<!-- GENERATED FILE. Do not edit by hand. Edit data/library.yml and run: python scripts/build.py -->
+---
+title: "Reports and papers"
+---
 
-## Reports and papers
+<!-- GENERATED FILE. Do not edit by hand. Edit data/library.yml and run: python scripts/build.py -->
 
 Reports and papers we hand to people when a book is too slow. Each has a DOI or a stable address, and most are free to read.
 
@@ -19,7 +21,7 @@ Reports and papers we hand to people when a book is too slow. Each has a DOI or 
   Global Initiative Against Transnational Organized Crime. 2025. *Global Organized Crime Index 2025*. Global Initiative Against Transnational Organized Crime. <https://ocindex.net/>. Open access.<br>
   **Why read it:** Scores for 193 countries on criminal markets, criminal actors and resilience, with the methodology published and the data downloadable. The fastest way to get oriented on a country's illicit economy before you read the detail. **Who it is for:** analysts comparing countries or briefing on a new region.
 - <a id="hutten2025"></a>**[Maritime Activities Observed Through Open-Access Positioning Data: Moving and Stationary Vessels in the Baltic Sea](https://doi.org/10.48550/arXiv.2511.23016)**<br>
-  Hütten, Moritz. 2025. “Maritime Activities Observed Through Open-Access Positioning Data: Moving and Stationary Vessels in the Baltic Sea.” *arXiv preprint*. <https://doi.org/10.48550/arXiv.2511.23016>. Open access.<br>
+  Hütten, Moritz. 2025. *Maritime Activities Observed Through Open-Access Positioning Data: Moving and Stationary Vessels in the Baltic Sea*. arXiv. <https://doi.org/10.48550/arXiv.2511.23016>. Open access.<br>
   **Why read it:** A study that rebuilt Baltic Sea vessel activity from open AIS data alone and came within about 20 percent of results from proprietary data. It is the best evidence we have for when the free sources are enough. **Who it is for:** analysts deciding whether free AIS data is good enough for a question.
 - <a id="ohchr2022"></a>**[Berkeley Protocol on Digital Open Source Investigations: A Practical Guide on the Effective Use of Digital Open Source Information in Investigating Violations of International Criminal, Human Rights and Humanitarian Law](https://www.ohchr.org/sites/default/files/2024-01/OHCHR_BerkeleyProtocol.pdf)**<br>
   Office of the United Nations High Commissioner for Human Rights and Human Rights Center, UC Berkeley School of Law. (2020) 2022. *Berkeley Protocol on Digital Open Source Investigations: A Practical Guide on the Effective Use of Digital Open Source Information in Investigating Violations of International Criminal, Human Rights and Humanitarian Law*. United Nations. <https://www.ohchr.org/sites/default/files/2024-01/OHCHR_BerkeleyProtocol.pdf>. Open access.<br>

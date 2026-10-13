@@ -1,0 +1,155 @@
+# GENERATED FILE. Do not edit by hand. Edit data/library.yml and run: python scripts/build.py
+- title: 'Treasure Islands: Tax Havens and the Men Who Stole the World'
+  subtitle: Shaxson, Nicholas, 2012
+  description: 'A readable account of the offshore system: what tax havens are, how they grew and who benefits. It explains the plumbing that most illicit trade investigations eventually run into.'
+  path: economics-politics.html#shaxson2012
+  categories:
+  - Global economics and politics
+  - Book
+- title: 'Somalia: Economy without State'
+  subtitle: Little, Peter D., 2003
+  description: 'How Somalia''s economy kept working, and in places grew, without a central government: livestock exports, remittances and trade networks that run on trust and clan. It challenges the assumption that markets need a state, which matters for anyone working on ungoverned spaces.'
+  path: economics-politics.html#little2003
+  categories:
+  - Global economics and politics
+  - Book
+- title: 'Global Outlaws: Crime, Money, and Power in the Contemporary World'
+  subtitle: Nordstrom, Carolyn, 2007
+  description: An anthropologist follows smuggled goods and money across borders, from African ports to European markets, and shows how illegal trade shapes economics and politics along the way. It is fieldwork rather than statistics, and it reads like it.
+  path: economics-politics.html#nordstrom2007
+  categories:
+  - Global economics and politics
+  - Book
+- title: 'Global Shell Games: Experiments in Transnational Relations, Crime, and Terrorism'
+  subtitle: Findley, Michael G., Daniel L. Nielson, and J. C. Sharman, 2014
+  description: An experimental study of how easy it is to set up an anonymous shell company. The authors posed as consultants and approached nearly 4,000 corporate service providers in more than 180 countries, then recorded who asked for identity documents and who did not. The results still frame how we think about the gaps that let terrorist financing, corruption and arms trading through.
+  path: financial-crime.html#findley2014
+  categories:
+  - Financial crime and illicit networks
+  - Book
+- title: 'Dark Commerce: How a New Illicit Economy Is Threatening Our Future'
+  subtitle: Shelley, Louise I., 2020
+  description: An account of how technology changed illicit trade, from drugs and people to wildlife and cybercrime. Shelley shows how these markets connect to each other and how digital anonymity and globalisation let them scale, which is the background every illicit trade analyst needs.
+  path: financial-crime.html#shelley2020
+  categories:
+  - Financial crime and illicit networks
+  - Book
+- title: Understanding Terrorist Finance
+  subtitle: Wittig, Timothy, 2011
+  description: A framework for analysing terrorist finance that dispels the popular myths about how groups get and use money. Wittig shows that terrorists work through everyday economic systems rather than a separate shadow finance world, which changes where an analyst should look. Priced for libraries, so borrow it or read it through a university subscription.
+  path: financial-crime.html#wittig2011
+  categories:
+  - Financial crime and illicit networks
+  - Book
+- title: 'The Great Game: On Secret Service in High Asia'
+  subtitle: Hopkirk, Peter, 2006
+  description: The nineteenth-century contest between Britain and Russia for Central Asia, told through the officers and explorers who fought it. It is the background to borders, grievances and trade routes that are still live, and it is a good story.
+  path: geopolitics.html#hopkirk2006
+  categories:
+  - Geopolitics and strategy
+  - Book
+- title: 'The New Rules of War: How America Can Win Against Russia, China, and Other Threats'
+  subtitle: McFate, Sean, 2020
+  description: How war has changed in the twenty-first century and why conventional doctrine keeps losing to it. McFate's "durable disorder", in which states, mercenaries and criminal networks blur together, is the environment much illicit trade work sits in.
+  path: geopolitics.html#mcfate2020
+  categories:
+  - Geopolitics and strategy
+  - Book
+- title: 'OSINT Techniques: Resources for Uncovering Online Information'
+  subtitle: Bazzell, Michael, 2024
+  description: 'The standard practical reference for finding and analysing publicly available information: search methods, social media, virtual machines, custom tools, documentation and ethics. Bazzell rewrites it every year or two, so buy the current edition and treat older ones as history.'
+  path: osint.html#bazzell2024
+  categories:
+  - OSINT and digital investigation
+  - Book
+- title: Oil and Water
+  subtitle: C4ADS, 2025
+  description: 'An investigation into the largest known dark fleet run by a single network: at least 56 supertankers carrying Iranian, Venezuelan and later Russian crude to China, using dark voyages, ship-to-ship transfers and GNSS spoofing to hide the oil''s origin. A model of how to build a case from AIS, imagery and corporate records.'
+  path: reports.html#c4ads2025
+  categories:
+  - Reports and papers
+  - Report
+- title: Safety and Shipping Review 2026
+  subtitle: Allianz Commercial, 2026
+  description: The annual review of ship losses, casualties and emerging risks from one of the largest marine insurers. It is where the shadow fleet, GNSS interference and port congestion show up as insurance numbers.
+  path: reports.html#allianz2026
+  categories:
+  - Reports and papers
+  - Report
+- title: 'European Union Serious and Organised Crime Threat Assessment 2025: The changing DNA of serious and organised crime'
+  subtitle: Europol, 2025
+  description: 'Europol''s four-yearly assessment of organised crime in the EU: the criminal markets, how networks are organised and what is changing, with a strong section on logistics and ports. The reference point for European threat pictures until the next edition.'
+  path: reports.html#europol2025
+  categories:
+  - Reports and papers
+  - Report
+- title: Global Organized Crime Index 2025
+  subtitle: Global Initiative Against Transnational Organized Crime, 2025
+  description: Scores for 193 countries on criminal markets, criminal actors and resilience, with the methodology published and the data downloadable. The fastest way to get oriented on a country's illicit economy before you read the detail.
+  path: reports.html#gitoc2025
+  categories:
+  - Reports and papers
+  - Report
+- title: 'Maritime Activities Observed Through Open-Access Positioning Data: Moving and Stationary Vessels in the Baltic Sea'
+  subtitle: Hütten, Moritz, 2025
+  description: A study that rebuilt Baltic Sea vessel activity from open AIS data alone and came within about 20 percent of results from proprietary data. It is the best evidence we have for when the free sources are enough.
+  path: reports.html#hutten2025
+  categories:
+  - Reports and papers
+  - Document
+- title: 'Berkeley Protocol on Digital Open Source Investigations: A Practical Guide on the Effective Use of Digital Open Source Information in Investigating Violations of International Criminal, Human Rights and Humanitarian Law'
+  subtitle: Office of the United Nations High Commissioner for Human Rights and Human Rights Center, UC Berkeley School of Law, 2022
+  description: 'The standard for open source investigations that need to stand up to legal scrutiny: principles, methods, preservation and verification, and the ethics of handling material. If you read one methodology document, read this one.'
+  path: reports.html#ohchr2022
+  categories:
+  - Reports and papers
+  - Document
+- title: 'Unsafe by Design?: A First Look at Security and Privacy Risks in OpenAI''s Custom GPT Ecosystem'
+  subtitle: Ogundoyin, Sunday Oyinlola, Muhammad Ikram, Hassan Jameel Asghar, Benjamin Zi Hao Zhao, and Dali Kaafar, 2025
+  description: 'An analysis of 14,904 custom GPTs that found most lacked basic protections: system prompts leak, roleplay and phishing attacks succeed, and the marketplace does little about it. Read it before you trust a third-party GPT with case material. The arXiv version is free to read.'
+  path: reports.html#ogundoyin2025
+  categories:
+  - Reports and papers
+  - Article
+- title: 'RUSI Maritime Sanctions Taskforce: Insurance and Flag States'
+  subtitle: Royal United Services Institute, Centre for Finance and Security, 2025
+  description: 'Findings from the taskforce''s May 2025 meeting of about sixty government and industry members on Russia''s shadow fleet: what insurers can do, how to hold flag states to account, and how to target the enablers. Short, and written for people who have to act on it.'
+  path: reports.html#rusi2025
+  categories:
+  - Reports and papers
+  - Report
+- title: AIS Handbook
+  subtitle: UN Committee of Experts on Big Data and Data Science for Official Statistics, AIS Task Team, 2020
+  description: 'A method handbook for working with AIS data: what the messages contain, how to clean them, how to derive port calls and voyages, and the pitfalls. Written for statisticians, which is why it is careful about what the data can and cannot show.'
+  path: reports.html#unaishandbook2020
+  categories:
+  - Reports and papers
+  - Document
+- title: 'Ghetto at the Center of the World: Chungking Mansions, Hong Kong'
+  subtitle: Mathews, Gordon, 2011
+  description: An ethnography of one building in Hong Kong where traders from South Asia and Africa buy phones and clothes to carry home. It is the best short account we know of low-end globalisation, the informal trade that moves goods across the Global South.
+  path: wider-reading.html#mathews2011
+  categories:
+  - Wider reading
+  - Book
+- title: 'Empire of AI: Dreams and Nightmares in Sam Altman''s OpenAI'
+  subtitle: Hao, Karen, 2025
+  description: A reporter's account of OpenAI and the race for AI dominance, including the labour in the Global South and the environmental cost behind the products. Useful background for anyone using these tools in intelligence work, and a reminder of where the power sits.
+  path: wider-reading.html#hao2025
+  categories:
+  - Wider reading
+  - Book
+- title: The Shadow of the Sun
+  subtitle: Kapuściński, Ryszard, 2002
+  description: Forty years of reporting from across Africa, from independence to the 1990s, by a Polish correspondent who travelled poor and listened. It teaches how to see a place before you analyse it.
+  path: wider-reading.html#kapuscinski2002
+  categories:
+  - Wider reading
+  - Book
+- title: 'Rhetoric and Governance under Trump: Proclamations from the Bullshit Pulpit'
+  subtitle: Kaussler, Bernd, Lars J. Kristiansen, and Jeffrey Delbert, 2020
+  description: An academic study of how rhetoric shaped governance during the first Trump administration, and what it did to institutions. We include it because the language of power is part of the environment analysts report on.
+  path: wider-reading.html#kaussler2020
+  categories:
+  - Wider reading
+  - Book

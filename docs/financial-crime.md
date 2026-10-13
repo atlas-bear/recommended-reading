@@ -1,6 +1,8 @@
-<!-- GENERATED FILE. Do not edit by hand. Edit data/library.yml and run: python scripts/build.py -->
+---
+title: "Financial crime and illicit networks"
+---
 
-## Financial crime and illicit networks
+<!-- GENERATED FILE. Do not edit by hand. Edit data/library.yml and run: python scripts/build.py -->
 
 How dirty money moves, who moves it and why the system lets them. Start with the one marked first; it is the shortest route into the subject.
 

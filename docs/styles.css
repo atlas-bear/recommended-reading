@@ -1,0 +1,22 @@
+/* Small adjustments on top of the Bootswatch theme. */
+
+/* Entries: give the citation line and the why-paragraph some air. */
+.content li > br + br {
+  display: none;
+}
+
+.content ul li {
+  margin-bottom: 1rem;
+}
+
+/* Keep the badge row from wrapping awkwardly. */
+.content p > img[src*="shields.io"] {
+  margin-right: 0.25rem;
+  vertical-align: middle;
+}
+
+/* Listing cards: let long titles breathe. */
+.quarto-grid-item .card-title {
+  font-size: 1.05rem;
+  line-height: 1.3;
+}
