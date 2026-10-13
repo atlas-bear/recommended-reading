@@ -17,7 +17,7 @@ description: "Books, reports and papers for intelligence professionals working o
 
 - [Maritime and Supply Chain OSINT Tools](https://github.com/atlas-bear/osint-tools): the tools and data sources we use, also as a [website](https://atlas-bear.github.io/osint-tools/).
 - [AI-Enhanced OSINT](https://github.com/atlas-bear/osint-ai-guide): our guide to using AI in intelligence work, also as a [website](https://atlas-bear.github.io/osint-ai-guide/).
-- [Atlas Bear Academy](https://www.atlasbear.academy): professional development programmes from Atlas Bear, the company we spun off from.
+- [Atlas|Bear Academy](https://www.atlasbear.academy): professional development programmes from Atlas|Bear, the company we spun off from.
 
 ---
 

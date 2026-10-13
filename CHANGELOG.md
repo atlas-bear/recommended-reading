@@ -6,7 +6,7 @@ All notable changes to this list are recorded here. The format follows [Keep a C
 
 ### Changed
 
-- Ownership wording, contacts and names now reflect AB//LABS, which began as Atlas Bear Labs and spun off from Atlas Bear; the connection is explained in About. Copyright lines read AB//LABS (formerly Atlas Bear Labs); contact is `support@ab-labs.io`.
+- Ownership wording, contacts and names now reflect AB//LABS, which began as Atlas|Bear Labs and spun off from Atlas|Bear; the connection is explained in About. Copyright lines read AB//LABS (formerly Atlas|Bear Labs); contact is `support@ab-labs.io`.
 - The website is now built with Quarto instead of MkDocs Material: the same generated pages, plus a Browse page (a filterable card grid of every title) and a References page rendered by Quarto's citation processor from the CSL JSON export. MkDocs was pinned to a version line that has stopped receiving updates.
 
 ## [2.0.0] - 2026-10-13
