@@ -14,8 +14,7 @@ https://inteltechniques.com
 # Our own repository files and workflow badges: their existence is checked by the build, and they 404 on a branch before merge.
 https://github.com/atlas-bear/recommended-reading/blob/main/
 https://github.com/atlas-bear/recommended-reading/actions/
-# Temporary until GitHub Pages is enabled for this repository and the hub exists; remove afterwards.
+# Temporary until GitHub Pages is enabled for this repository; remove afterwards.
 https://atlas-bear.github.io/recommended-reading/
-https://atlas-bear.github.io/
 # Substack blocks automated requests.
 https://maraiq.substack.com
