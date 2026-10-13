@@ -1,4 +1,4 @@
-# Atlas Bear Recommended Reading: the single source for the list.
+# Recommended Reading: the single source for the list.
 #
 # scripts/build.py turns this file into README.md, the pages in docs/ and the
 # exports in exports/. Edit here, then run: python scripts/build.py

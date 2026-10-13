@@ -23,7 +23,7 @@ import yaml
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 DATA = ROOT / "data" / "library.yml"
 TYPES = {"book": "book", "report": "report", "article-journal": "article", "paper-conference": "article"}
-UA = "atlas-bear-recommended-reading/2.0 (https://github.com/atlas-bear/recommended-reading; mailto:support@atlasbear.co)"
+UA = "atlas-bear-recommended-reading/2.0 (https://github.com/atlas-bear/recommended-reading; mailto:support@ab-labs.io)"
 
 
 def q(s):
