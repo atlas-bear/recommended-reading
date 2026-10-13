@@ -275,7 +275,7 @@ def front_matter(title, description=None):
 
 def section_page(items, key, title, intro):
     body, latest = section_body(items, key)
-    return (front_matter(title) + HEADER
+    return (front_matter(title, re.split(r"(?<=\.)\s+", intro)[0]) + HEADER
             + f"{intro}\n\n{GENERATED_NOTE}\n\n{body}\n\n*Last checked {latest}.*\n")
 
 

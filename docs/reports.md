@@ -1,5 +1,6 @@
 ---
 title: "Reports and papers"
+description: "Reports and papers we hand to people when a book is too slow."
 ---
 
 <!-- GENERATED FILE. Do not edit by hand. Edit data/library.yml and run: python scripts/build.py -->

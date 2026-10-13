@@ -1,5 +1,6 @@
 ---
 title: "Global economics and politics"
+description: "The wider economy that illicit trade lives inside: offshore finance, informal markets and states that work differently from the textbook."
 ---
 
 <!-- GENERATED FILE. Do not edit by hand. Edit data/library.yml and run: python scripts/build.py -->

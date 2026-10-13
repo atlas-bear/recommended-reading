@@ -1,5 +1,6 @@
 ---
 title: "OSINT and digital investigation"
+description: "Method books for finding and checking information in the open."
 ---
 
 <!-- GENERATED FILE. Do not edit by hand. Edit data/library.yml and run: python scripts/build.py -->

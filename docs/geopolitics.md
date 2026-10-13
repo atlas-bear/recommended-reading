@@ -1,5 +1,6 @@
 ---
 title: "Geopolitics and strategy"
+description: "The strategic background for the places and conflicts that keep turning up in our work."
 ---
 
 <!-- GENERATED FILE. Do not edit by hand. Edit data/library.yml and run: python scripts/build.py -->
