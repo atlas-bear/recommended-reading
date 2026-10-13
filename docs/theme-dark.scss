@@ -71,24 +71,50 @@ $atlas-max-width: 1220px;
   color: $navbar-fg;
 }
 
-.atlas-repo svg {
+.atlas-repo > svg {
   width: 2rem;
   height: 2rem;
   fill: currentColor;
   flex-shrink: 0;
 }
 
+.atlas-repo > span {
+  display: block;
+  max-width: 14rem;
+  min-width: 0;
+}
+
 .atlas-repo .atlas-repo__name {
+  display: block;
   font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .atlas-repo .atlas-repo__facts {
+  display: block;
   opacity: 0.85;
+  white-space: nowrap;
 }
 
-.atlas-repo .atlas-repo__facts span + span::before {
-  content: "\00b7";
-  margin: 0 0.35rem;
+.atlas-repo .atlas-repo__facts span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+  margin-right: 0.6rem;
+}
+
+.atlas-repo .atlas-repo__facts svg {
+  width: 0.75rem;
+  height: 0.75rem;
+  fill: currentColor;
+}
+
+@media (max-width: 991px) {
+  .atlas-repo > span {
+    max-width: 100%;
+  }
 }
 
 .content {
