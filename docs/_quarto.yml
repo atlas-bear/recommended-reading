@@ -8,7 +8,7 @@ project:
 website:
   title: "Recommended Reading"
   description: "Books, reports and papers for intelligence professionals working on illicit trade, with full citations and downloadable references."
-  site-url: https://atlas-bear.github.io/recommended-reading/
+  site-url: https://library.ab-labs.io/recommended-reading/
   repo-url: https://github.com/atlas-bear/recommended-reading
   repo-subdir: docs
   repo-actions: [issue]
@@ -26,7 +26,7 @@ website:
         href: references.qmd
     right:
       - text: Library
-        href: https://atlas-bear.github.io/
+        href: https://library.ab-labs.io/
   sidebar:
     style: docked
     collapse-level: 2
@@ -48,7 +48,7 @@ website:
     left: "Copyright 2024-2026 AB//LABS (formerly Atlas|Bear Labs). List and data files licensed MIT."
     right:
       - text: Library
-        href: https://atlas-bear.github.io/
+        href: https://library.ab-labs.io/
       - text: ab-labs.io
         href: https://ab-labs.io
       - text: Contact

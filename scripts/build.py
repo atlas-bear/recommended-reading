@@ -306,12 +306,12 @@ def index_body(items):
 ![Verify identifiers](https://github.com/atlas-bear/recommended-reading/actions/workflows/verify.yml/badge.svg)
 ![License](https://img.shields.io/github/license/atlas-bear/recommended-reading)
 
-> Part of the [Library](https://atlas-bear.github.io/), by AB//LABS. Read this list as a website at [atlas-bear.github.io/recommended-reading](https://atlas-bear.github.io/recommended-reading/), or take it into your reference manager: [BibTeX](https://github.com/atlas-bear/recommended-reading/blob/main/exports/reading-list.bib), [CSL JSON](https://github.com/atlas-bear/recommended-reading/blob/main/exports/reading-list.json) (imports straight into Zotero) or [CSV](https://github.com/atlas-bear/recommended-reading/blob/main/exports/reading-list.csv).
+> Part of the [Library](https://library.ab-labs.io/), by AB//LABS. Read this list as a website at [library.ab-labs.io/recommended-reading](https://library.ab-labs.io/recommended-reading/), or take it into your reference manager: [BibTeX](https://github.com/atlas-bear/recommended-reading/blob/main/exports/reading-list.bib), [CSL JSON](https://github.com/atlas-bear/recommended-reading/blob/main/exports/reading-list.json) (imports straight into Zotero) or [CSV](https://github.com/atlas-bear/recommended-reading/blob/main/exports/reading-list.csv).
 
 **Related resources:**
 
-- [Maritime and Supply Chain OSINT Tools](https://github.com/atlas-bear/osint-tools): the tools and data sources we use, also as a [website](https://atlas-bear.github.io/osint-tools/).
-- [AI-Enhanced OSINT](https://github.com/atlas-bear/osint-ai-guide): our guide to using AI in intelligence work, also as a [website](https://atlas-bear.github.io/osint-ai-guide/).
+- [Maritime and Supply Chain OSINT Tools](https://github.com/atlas-bear/osint-tools): the tools and data sources we use, also as a [website](https://library.ab-labs.io/osint-tools/).
+- [AI-Enhanced OSINT](https://github.com/atlas-bear/osint-ai-guide): our guide to using AI in intelligence work, also as a [website](https://library.ab-labs.io/osint-ai-guide/).
 - [Atlas|Bear Academy](https://www.atlasbear.academy): professional development programmes from Atlas|Bear, the company we spun off from.
 
 ---

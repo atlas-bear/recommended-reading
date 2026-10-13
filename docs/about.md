@@ -25,13 +25,13 @@ Thanks to the authors who did the work these pages point to, to the Open Library
 
 | Repository | Purpose | Status |
 | --- | --- | --- |
-| [recommended-reading](https://github.com/atlas-bear/recommended-reading) | This list, also at [atlas-bear.github.io/recommended-reading](https://atlas-bear.github.io/recommended-reading/) | ![Last commit](https://img.shields.io/github/last-commit/atlas-bear/recommended-reading) |
-| [osint-tools](https://github.com/atlas-bear/osint-tools) | Maritime and supply chain OSINT tools, also at [atlas-bear.github.io/osint-tools](https://atlas-bear.github.io/osint-tools/) | ![Last commit](https://img.shields.io/github/last-commit/atlas-bear/osint-tools) |
-| [osint-ai-guide](https://github.com/atlas-bear/osint-ai-guide) | AI-Enhanced OSINT: a practical guide, also at [atlas-bear.github.io/osint-ai-guide](https://atlas-bear.github.io/osint-ai-guide/) | ![Last commit](https://img.shields.io/github/last-commit/atlas-bear/osint-ai-guide) |
+| [recommended-reading](https://github.com/atlas-bear/recommended-reading) | This list, also at [library.ab-labs.io/recommended-reading](https://library.ab-labs.io/recommended-reading/) | ![Last commit](https://img.shields.io/github/last-commit/atlas-bear/recommended-reading) |
+| [osint-tools](https://github.com/atlas-bear/osint-tools) | Maritime and supply chain OSINT tools, also at [library.ab-labs.io/osint-tools](https://library.ab-labs.io/osint-tools/) | ![Last commit](https://img.shields.io/github/last-commit/atlas-bear/osint-tools) |
+| [osint-ai-guide](https://github.com/atlas-bear/osint-ai-guide) | AI-Enhanced OSINT: a practical guide, also at [library.ab-labs.io/osint-ai-guide](https://library.ab-labs.io/osint-ai-guide/) | ![Last commit](https://img.shields.io/github/last-commit/atlas-bear/osint-ai-guide) |
 | [equasis-cli](https://github.com/rhinonix/equasis-cli) | Equasis from the command line, in batches | ![Last commit](https://img.shields.io/github/last-commit/rhinonix/equasis-cli) |
 | [cue-kit](https://github.com/atlas-bear/cue-kit) | Turn video into frames and transcripts for analysis | ![Last commit](https://img.shields.io/github/last-commit/atlas-bear/cue-kit) |
 | [mara-roadmap](https://github.com/atlas-bear/mara-roadmap) | Public roadmap and feedback for [MARA](https://maraiq.com), our maritime security intelligence platform | ![Last commit](https://img.shields.io/github/last-commit/atlas-bear/mara-roadmap) |
 
-Everything above is gathered at the [Library](https://atlas-bear.github.io/). AB//LABS began as Atlas|Bear Labs, the technical side of [Atlas|Bear](https://atlasbear.co), and is now a company of its own. The two still work together, and our repositories keep the `atlas-bear` name on GitHub for now.
+Everything above is gathered at the [Library](https://library.ab-labs.io/). AB//LABS began as Atlas|Bear Labs, the technical side of [Atlas|Bear](https://atlasbear.co), and is now a company of its own. The two still work together, and our repositories keep the `atlas-bear` name on GitHub for now.
 
 **Learn more:** [ab-labs.io](https://ab-labs.io), [Atlas|Bear](https://atlasbear.co) and its [Academy](https://www.atlasbear.academy), and [Waterline](https://maraiq.substack.com/), our newsletter. **Contact:** [support@ab-labs.io](mailto:support@ab-labs.io).
