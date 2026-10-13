@@ -27,9 +27,6 @@ website:
     right:
       - text: Atlas Bear Library
         href: https://atlas-bear.github.io/
-      - icon: github
-        href: https://github.com/atlas-bear/recommended-reading
-        aria-label: GitHub
   sidebar:
     style: docked
     collapse-level: 2
@@ -60,9 +57,15 @@ website:
 format:
   html:
     theme:
-      light: flatly
-      dark: darkly
-    css: styles.css
+      light: [flatly, theme.scss]
+      dark: [darkly, theme-dark.scss]
+    include-after-body:
+      text: '<script src="repo-stats.js"></script>'
+    grid:
+      sidebar-width: 270px
+      body-width: 820px
+      margin-width: 230px
+      gutter-width: 1.5rem
     toc: true
     toc-depth: 2
     link-external-icon: false
