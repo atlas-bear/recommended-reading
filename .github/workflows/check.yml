@@ -26,8 +26,8 @@ jobs:
         run: |
           changed=$(git diff --name-only "origin/${{ github.base_ref }}...HEAD")
           generated=$(echo "$changed" | grep -E '^(README\.md|exports/.*|docs/listing\.yml|docs/(index|financial-crime|economics-politics|geopolitics|osint|reports|wider-reading)\.md)$' || true)
-          if [ -n "$generated" ] && ! echo "$changed" | grep -qE '^(data/library\.yml|scripts/build\.py)$'; then
-            msg="README.md, exports/, docs/listing.yml and the list pages in docs/ are generated from data/library.yml. Edit the YAML (or use the issue form) and run: python scripts/build.py"
+          if [ -n "$generated" ] && ! echo "$changed" | grep -qE '^(data/library\.yml|scripts/build\.py|docs/contributing\.md|docs/about\.md)$'; then
+            msg="README.md, exports/, docs/listing.yml and the list pages in docs/ are generated from data/library.yml (and the README also from docs/contributing.md and docs/about.md). Edit those sources and run: python scripts/build.py"
             echo "::error file=data/library.yml::$msg"
             echo "$msg" >> "$GITHUB_STEP_SUMMARY"
             exit 1
