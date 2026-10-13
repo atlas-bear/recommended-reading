@@ -63,6 +63,8 @@ python scripts/build.py --check  # what CI runs
 python scripts/verify.py         # check ISBNs and DOIs against the registries (network)
 ```
 
+If you keep candidates in Zotero, export them as CSL JSON and run `python scripts/import_zotero.py export.json` to get draft YAML blocks with the citation details filled in; you add the section, the "why" and the "audience" lines.
+
 The build checks every ISBN's check digit, the shape of every DOI, duplicate identifiers and the required fields. Once a month a workflow checks each ISBN against Open Library and each DOI against Crossref or DataCite, and opens an issue if something no longer resolves.
 
 ## Reviews and releases
