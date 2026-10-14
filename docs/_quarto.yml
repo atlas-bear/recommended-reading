@@ -20,8 +20,6 @@ website:
   search: false
   navbar:
     left:
-      - text: Start here
-        href: index.md
       - text: Browse
         href: browse.qmd
       - text: References
@@ -33,7 +31,8 @@ website:
     style: docked
     collapse-level: 2
     contents:
-      - index.md
+      - text: Start here
+        href: index.md
       - section: Sections
         contents:
           - financial-crime.md
